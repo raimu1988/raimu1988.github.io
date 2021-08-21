@@ -149,6 +149,7 @@ footer p {
   .container {
     flex-direction: column;
     align-items: center;
+    height: 192px;
   }
 
   .main-nav {
@@ -156,6 +157,8 @@ footer p {
   }
 
   .main-nav li {
+    font-size: 1.375rem;
+    text-transform: uppercase;
     margin: 0 16px;
     padding-bottom: 8px;
   }
