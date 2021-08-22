@@ -144,6 +144,24 @@ footer p {
   color: #fff;
 }
 
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.grid img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.item {
+  padding: 5%;
+}
+
 @media (max-width: 600px) {
 
   .container {
@@ -164,6 +182,9 @@ footer p {
   }
   .post-title {
     font-size: 20px;
+}
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 }
