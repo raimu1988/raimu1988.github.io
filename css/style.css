@@ -175,6 +175,11 @@ footer p {
   padding: 5%;
 }
 
+.zakki {
+  line-height: 2;
+  padding: 16px 0 ;
+}
+
 @media (max-width: 600px) {
 
   .container {
