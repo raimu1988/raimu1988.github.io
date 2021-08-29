@@ -209,6 +209,7 @@ footer p {
 .grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+
 .post-info h2 {
   margin-top: 0;
 }
@@ -222,7 +223,10 @@ footer p {
   padding-top: 4px;
   margin-bottom: 4px;
 }
-
+.post-info img {
+  height: 80%;
+  object-fit: cover;
+}
 .post-date {
   width: 70px;
   height: 70px;
