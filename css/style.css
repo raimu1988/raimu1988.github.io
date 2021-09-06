@@ -140,6 +140,14 @@ table tr:nth-child(even) {
   margin-top: 16px;
   margin-bottom: 8px;
 }
+.post-h2 {
+  font-family: "Yu Mincho", "YuMincho", serif;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+
 .post-title2 {
   font-family: "Yu Mincho", "YuMincho", serif;
   font-size: 1.25rem;
@@ -217,6 +225,12 @@ footer p {
   font-size: 0.8rem;
   font-weight: normal;
   margin-left: 8px;
+}
+.post-h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-top: 16px;
+  margin-bottom: 4px;
 }
 .post-info {
   position: relative;
