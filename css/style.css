@@ -104,6 +104,7 @@ aside {
 
 .desc a {
   display: block;
+  color: #432;
 }
 
 table {
@@ -153,7 +154,17 @@ table tr:nth-child(even) {
 
 .seni {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.seni a {
+  color: #fff;
+  background-color: #432;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1px lightgray;
+  font-size: 12px;
 }
 
 .post-date {
@@ -259,8 +270,11 @@ footer p {
   .post-title {
     font-size: 20px;
 }
+.pic img {
+  width: 160px;
+}
 .desc {
-  width: calc(100% - 180px - 16px);
+  width: calc(100% - 180px - 4px);
 }
 
 time {
