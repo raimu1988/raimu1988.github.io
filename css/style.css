@@ -17,12 +17,13 @@ a:hover {
   opacity: .5;
 }
 
-img {
-  width: 100%;
+article img {
+  width: 50%;
 }
 
 h1 {
   margin-top: 16px;
+  font-weight: normal;
 }
 
 h2 {
@@ -31,12 +32,15 @@ h2 {
 
 li {
   list-style-position: inside;
+  line-height: 2;
 }
 
-
+p {
+  line-height: 2;
+}
 
 .wrapper {
-  margin: 4% 15%;
+  margin: 4% 13%;
 }
 
 .container {
@@ -48,14 +52,62 @@ li {
   height: 176px;
 }
 
-.diarygrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+.new-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indexarticle {
+  width: 74%;
+}
+
+aside {
+  width: 22%;
+}
+.sub-menu {
+  list-style: none;
+}
+.sub-menu li {
+  border-bottom: 1px dashed lightgray ;
+}
+.sub-menu a {
+  color: #432;
+  padding: 10px;
+  display: block;
+}
+
+.post-info  {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray ;
+  position: relative;
+}
+
+.post-info:last-child {
+  border-bottom: none;
+}
+
+.pic {
+  width: 180px;
+  margin: auto 0;
+}
+
+.pic img {
+  border-radius: 5px;
+  width: 180px;
+}
+
+.desc {
+  width: calc(100% - 180px - 32px);
+}
+
+.desc a {
+  display: block;
 }
 
 table {
-  width: 100%;
+  width: 80%;
 }
 
 td {
@@ -92,6 +144,7 @@ table tr:nth-child(even) {
 
 .main-nav li {
   margin-left: 32px;
+  text-transform: uppercase;
 }
 
 .main-nav a {
@@ -103,42 +156,38 @@ table tr:nth-child(even) {
   margin-top: 15px;
 }
 
-.post-info {
-  position: relative;
-  padding-top: 4px;
-  margin-bottom: 40px;
-}
-
-.post-info img {
-  padding: 5px;
-  height: 90%;
-  object-fit: cover;
-}
-
 .post-date {
   background: #e1c0b6;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
+  width: 84px;
+  height: 30px;
   text-align: center;
   position: absolute;
   top: 0;
-  padding-top: 10px;
-}
-
-.post-date span {
-  border-top: 1px rgba(255,255,255,.5) solid;
   padding-top: 6px;
-  display: block;
-  width: 60%;
-  margin: 0 auto;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.post-daten {
+  background: #b9d0b1;
+  width: 84px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 5px;
 }
 
 .post-title {
   font-family: "Yu Mincho", "YuMincho", serif;
   font-weight: normal;
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .post-h2 {
   font-family: "Yu Mincho", "YuMincho", serif;
@@ -152,7 +201,7 @@ table tr:nth-child(even) {
   font-family: "Yu Mincho", "YuMincho", serif;
   font-size: 1.25rem;
   font-weight: normal;
-  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 footer {
@@ -165,26 +214,7 @@ footer p {
   color: #fff;
 }
 
-.grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 6%;
-  margin-bottom: 50px;
-}
-
-.grid img {
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
-}
-
-.item {
-  padding: 5%;
-}
-
 .zakki {
-  line-height: 2;
   padding: 16px 0 ;
 }
 
@@ -193,61 +223,64 @@ footer p {
   .container {
     flex-direction: column;
     align-items: center;
-    height: 192px;
+    height: 160px;
     padding: 0 4%;
   }
-
+  .info {
+    margin-top: 8px;
+    text-align: center;
+  }
   .wrapper {
     margin: 4%;
   }
+
+  .new-contents {
+    flex-direction: column;
+  }
   
+  .indexarticle,
+  aside {
+    width: 100%;
+  }
   .main-nav {
     margin-top: 5px;
   }
 
   .main-nav li {
     font-size: 1.375rem;
-    text-transform: uppercase;
     margin: 0 16px;
     padding-bottom: 8px;
   }
+
   .post-title {
     font-size: 20px;
+}
+.desc {
+  width: calc(100% - 180px - 16px);
+}
+
+time {
+  font-size: 0.8rem;
 }
 .grid {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+article img {
+  width: 100%;
+}
 
-.post-info h2 {
-  margin-top: 0;
+table {
+  width: 100%;
 }
 .post-title2 {
-  font-size: 0.8rem;
-  font-weight: normal;
-  margin-left: 8px;
+  padding-top: 8px;
+  font-size: 1rem;
 }
 .post-h2 {
   font-weight: normal;
   font-size: 1.2rem;
   margin-top: 16px;
   margin-bottom: 4px;
-}
-.post-info {
-  position: relative;
-  padding-top: 4px;
-  margin-bottom: 4px;
-}
-.post-info img {
-  height: 80%;
-  object-fit: cover;
-}
-.post-date {
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  position: absolute;
-  top: 5px;
-  padding-top: 10px;
 }
 
 }
