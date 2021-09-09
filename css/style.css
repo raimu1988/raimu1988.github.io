@@ -214,6 +214,10 @@ footer p {
   color: #fff;
 }
 
+.footerimg img {
+  padding-top: 10px;
+}
+
 .zakki {
   padding: 16px 0 ;
 }
